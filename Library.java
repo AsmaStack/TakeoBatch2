@@ -56,9 +56,9 @@ public class Library {
     {
         for (Transaction transaction : transactions)
         {
-            if(transaction.getBook() == book && transaction.getReturndate()== null)
+            if(transaction.getBook() == book && transaction.getReturnDate()== null)
             {
-                transaction.setReturndate("current_date");
+                transaction.setReturnDate(null);;
                 book.setBookAvailabilityStatus(true);
                 System.out.println("Book" + book.getBookTitle()+ "returned.");
                 return;
