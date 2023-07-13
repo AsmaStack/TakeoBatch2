@@ -64,7 +64,7 @@ public class Library {
                 return;
             }
         }
-        System.out.println("Book" + book.getBookTitle()+ "is not currently on loan.");
+        System.out.println("Book" + book.getBookTitle()+ "is not on loan.");
     }
     public List<Transaction> getBorrowingHistory(Borrower borrower)
     {
