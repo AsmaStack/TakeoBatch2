@@ -1,0 +1,13 @@
+
+import java.util.List;
+import java.util.ArrayList;
+
+package casestudytwo;
+
+public class Library {
+
+    public void displayItems(LibraryItem[] items) {
+
+        for (LibraryItem item : items) {
+
+            item.displayItemDetails();
