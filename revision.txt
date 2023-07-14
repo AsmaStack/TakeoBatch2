@@ -1,0 +1,60 @@
+
+1:
+A) Constructor allows us to initialize an object.
+B) We can have multiple constructors through constructor overloading. It 
+allows us to initialize an object with different attributes. For example, 
+one constructor can have “String name” only and the other one can allow us 
+to initialize with “String name, int age”.
+
+2:
+a) public can be accessed from anywhere in our code. In the same package 
+or not doesn’t matter whereas default classes only accessible from the 
+package they created in. Private is only accessible inside class whereas 
+protected can be accessed inside the class and its children.
+B) Encapsulation. For example, when we want to change person object’s age, 
+we can create a validation inside setter method to make sure it’s not 
+negative value.
+
+3:
+a) We can create methods with the same name but different parameters.
+Public void printDetails(Object obj) {}
+Public void printDetails() {}
+B) We can override methods that are inherited from another class. It helps 
+with polymorphism because we can change its behaviour in addition to 
+calling the parent method using super().
+
+4:
+A) Inheritance allows us to inherit methods and properties from parent 
+class. Subclasses can add functionality to the superclass.
+B) Single inheritance means inheriting from one super class.
+
+Class Car {}
+Class Car extends Vehicle {}
+
+Multiple inheritance means one class having more than one superclass but 
+not supported in Java.
+
+5:
+A) Interfaces allows us to define methods that must be implemented by a 
+class once we use that interface on that class. It provides an 
+abstraction. Interfaces cannot be instantiated and. Abstract classes are 
+like interfaces but can be inherited and we can define behaviour for them.
+B) We can use abstract class to provide common implementation for related 
+classes. An example can be Animal class and its abstract methods such as 
+eat(), sleep() which are common behaviours. On the other hand for 
+interface, we force multiple classes to create a similar contract.
+
+6:
+a) Packages allows us to organize and structure the code. It helps us to 
+group related classes. It also prevents using conflicting such as using 
+same class name in different classes.
+b) We can import class, interface, enum etc.. from another package using 
+“import” statement.
+
+Import com.os.library.Library;
+Class Main {
+	public static void main(String[] args) {
+		Library library = new Library();
+		library.addBook(“LOTR”);
+	}
+}
